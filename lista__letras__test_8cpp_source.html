@@ -1,0 +1,89 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.14"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Practica final ED: Fichero Fuente src/lista_letras_test.cpp</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Practica final ED
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generado por Doxygen 1.8.14 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Buscar');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Buscar');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">lista_letras_test.cpp</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="lista__letras__test_8cpp.html">Ir a la documentación de este archivo.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;</div><div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#include&lt;iostream&gt;</span></div><div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#include&quot;<a class="code" href="lista__letras_8h.html">lista_letras.h</a>&quot;</span></div><div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;</div><div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="keywordtype">int</span> main(<span class="keyword">const</span> <span class="keywordtype">int</span> argc,<span class="keyword">const</span> <span class="keywordtype">char</span>* argv[]) {</div><div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;    <span class="keywordflow">if</span> (argc&lt;3) {</div><div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;        std::cout&lt;&lt;<span class="stringliteral">&quot;TEST FALLIDO: Error en el número de argumentos\n&quot;</span>;</div><div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;        <span class="keywordflow">return</span> -1;</div><div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;    }</div><div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;    <a class="code" href="classlista__letras.html">lista_letras</a> lista1;</div><div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    <a class="code" href="classlista__letras.html">lista_letras</a> lista2;</div><div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    <a class="code" href="classlista__letras.html">lista_letras</a> lista3;</div><div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    std::string palabra = <span class="stringliteral">&quot;Esternocleidomastoideo&quot;</span>;</div><div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    <a class="code" href="classdiccionario.html">diccionario</a> dic = <a class="code" href="diccionario_8h.html#abde7585dad6e5e486d904829e2153c2f">fromFile</a>(argv[1]);</div><div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;</div><div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    lista1 = <a class="code" href="lista__letras_8h.html#a7742cbd8a4d8244f44deb8fb8433ee40">fromString</a>(palabra);</div><div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    std::cout&lt;&lt;<span class="stringliteral">&quot;\nPrimera lista de letras formada a partir de:\n&quot;</span>;</div><div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    std::cout&lt;&lt;palabra&lt;&lt;std::endl&lt;&lt;std::endl;</div><div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    std::cout&lt;&lt;lista1;</div><div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;</div><div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    lista2 = <a class="code" href="lista__letras_8h.html#a866da14f5228e87f4b4d0e337b0df7ff">fromDic</a>(dic);</div><div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    std::cout&lt;&lt;<span class="stringliteral">&quot;\nSegunda lista de letras formada a partir de diccionario\n&quot;</span>;</div><div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    std::cout&lt;&lt;lista2;</div><div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;</div><div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    lista3 = <a class="code" href="lista__letras_8h.html#a96bee18c1d2244ca484e546e36adea04">fromDicFile</a>(argv[2]);</div><div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    std::cout&lt;&lt;<span class="stringliteral">&quot;\nTercera lista de letras formada a partir de archivo\n&quot;</span>;</div><div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    std::cout&lt;&lt;lista3;</div><div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;</div><div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    std::cout&lt;&lt;<span class="stringliteral">&quot;\nSumando las tres listas\n&quot;</span>;</div><div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    <a class="code" href="classlista__letras.html">lista_letras</a> suma = lista1 + lista2 + lista3;</div><div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    std::cout&lt;&lt;suma;</div><div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    <a class="code" href="classlista__letras.html#ab20e1ad06fd5c5a26ad221b8f655edba">lista_letras::iterator</a> aux;</div><div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    <span class="keywordflow">if</span> (suma.isLetter(<span class="charliteral">&#39;Q&#39;</span>,aux))</div><div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;        std::cout&lt;&lt;<span class="stringliteral">&quot;La lista contiene la Q\n&quot;</span>;</div><div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;</div><div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    std::cout&lt;&lt;<span class="stringliteral">&quot;Se guardará en test/Scrabble_test.txt\n&quot;</span>;</div><div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    suma.<a class="code" href="classlista__letras.html#a83ae17bb4b4657ddf40f35a3ab26abe9">toFile</a>(<span class="stringliteral">&quot;test/Scrabble_test.txt&quot;</span>);</div><div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    <span class="keywordflow">return</span> 0;</div><div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;}</div><div class="ttc" id="classdiccionario_html"><div class="ttname"><a href="classdiccionario.html">diccionario</a></div><div class="ttdoc">TDA diccionario. </div><div class="ttdef"><b>Definition:</b> <a href="diccionario_8h_source.html#l00018">diccionario.h:18</a></div></div>
+<div class="ttc" id="lista__letras_8h_html_a866da14f5228e87f4b4d0e337b0df7ff"><div class="ttname"><a href="lista__letras_8h.html#a866da14f5228e87f4b4d0e337b0df7ff">fromDic</a></div><div class="ttdeci">lista_letras fromDic(const diccionario &amp;dic)</div><div class="ttdoc">Crea una lista a partir de un diccionario. </div><div class="ttdef"><b>Definition:</b> <a href="lista__letras_8cpp_source.html#l00102">lista_letras.cpp:102</a></div></div>
+<div class="ttc" id="lista__letras_8h_html"><div class="ttname"><a href="lista__letras_8h.html">lista_letras.h</a></div></div>
+<div class="ttc" id="diccionario_8h_html_abde7585dad6e5e486d904829e2153c2f"><div class="ttname"><a href="diccionario_8h.html#abde7585dad6e5e486d904829e2153c2f">fromFile</a></div><div class="ttdeci">diccionario fromFile(const char file[])</div><div class="ttdoc">Crea un diccionario a partir de un archivo. </div><div class="ttdef"><b>Definition:</b> <a href="diccionario_8cpp_source.html#l00072">diccionario.cpp:72</a></div></div>
+<div class="ttc" id="lista__letras_8h_html_a7742cbd8a4d8244f44deb8fb8433ee40"><div class="ttname"><a href="lista__letras_8h.html#a7742cbd8a4d8244f44deb8fb8433ee40">fromString</a></div><div class="ttdeci">lista_letras fromString(const std::string &amp;s)</div><div class="ttdoc">Crea una lista a partir de una cadena de caracteres. </div><div class="ttdef"><b>Definition:</b> <a href="lista__letras_8cpp_source.html#l00090">lista_letras.cpp:90</a></div></div>
+<div class="ttc" id="classlista__letras_html"><div class="ttname"><a href="classlista__letras.html">lista_letras</a></div><div class="ttdoc">TDA lista_letras. Representa un conjunto de datos_letra. </div><div class="ttdef"><b>Definition:</b> <a href="lista__letras_8h_source.html#l00048">lista_letras.h:48</a></div></div>
+<div class="ttc" id="classlista__letras_html_ab20e1ad06fd5c5a26ad221b8f655edba"><div class="ttname"><a href="classlista__letras.html#ab20e1ad06fd5c5a26ad221b8f655edba">lista_letras::iterator</a></div><div class="ttdeci">std::set&lt; datos_letra, classcomp_datosletra &gt;::iterator iterator</div><div class="ttdoc">Iteradores de la clase. </div><div class="ttdef"><b>Definition:</b> <a href="lista__letras_8h_source.html#l00075">lista_letras.h:75</a></div></div>
+<div class="ttc" id="classlista__letras_html_a83ae17bb4b4657ddf40f35a3ab26abe9"><div class="ttname"><a href="classlista__letras.html#a83ae17bb4b4657ddf40f35a3ab26abe9">lista_letras::toFile</a></div><div class="ttdeci">bool toFile(const char file[]=&quot;salida.txt&quot;)</div><div class="ttdoc">Guarda una lista de letras en un archivo. </div><div class="ttdef"><b>Definition:</b> <a href="lista__letras_8cpp_source.html#l00067">lista_letras.cpp:67</a></div></div>
+<div class="ttc" id="lista__letras_8h_html_a96bee18c1d2244ca484e546e36adea04"><div class="ttname"><a href="lista__letras_8h.html#a96bee18c1d2244ca484e546e36adea04">fromDicFile</a></div><div class="ttdeci">lista_letras fromDicFile(const char file[])</div><div class="ttdoc">Crea una lista de letras a partir de un archivo. </div><div class="ttdef"><b>Definition:</b> <a href="lista__letras_8cpp_source.html#l00113">lista_letras.cpp:113</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Generado por &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.14
+</small></address>
+</body>
+</html>

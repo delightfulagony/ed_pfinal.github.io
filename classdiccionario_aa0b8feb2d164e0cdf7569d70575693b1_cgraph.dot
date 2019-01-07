@@ -1,0 +1,11 @@
+digraph "diccionario::getFrecuencias"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node4 [label="diccionario::getFrecuencias",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node4 -> Node5 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="diccionario::cbegin",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classdiccionario.html#ae0fef8f7cb621da3fc1dc73e20fc4749",tooltip="Iterador constante al inicio del diccionario. "];
+  Node4 -> Node6 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node6 [label="diccionario::cend",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classdiccionario.html#ac000fe2dbf66b9f509ab8727d36fc185",tooltip="Iterador constante al final del diccionario. "];
+}

@@ -1,0 +1,85 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.14"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Practica final ED: Fichero Fuente src/ia_test.cpp</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Practica final ED
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generado por Doxygen 1.8.14 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Buscar');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Buscar');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">ia_test.cpp</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="ia__test_8cpp.html">Ir a la documentación de este archivo.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;</div><div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#include &lt;iostream&gt;</span></div><div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="ia_8h.html">ia.h</a>&quot;</span></div><div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;</div><div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="keywordtype">int</span> main(<span class="keyword">const</span> <span class="keywordtype">int</span> argc,<span class="keyword">const</span> <span class="keywordtype">char</span>* argv[]) {</div><div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;    <span class="keywordflow">if</span> (argc&lt;2) {</div><div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;        std::cout&lt;&lt;<span class="stringliteral">&quot;TEST FALLIDO: Faltan argumentos\n&quot;</span>;</div><div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;        <span class="keywordflow">return</span> -1;</div><div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;    }</div><div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    <a class="code" href="classdiccionario.html">diccionario</a> aux, dic;</div><div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i=1;i&lt;argc;i++) {</div><div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;        aux = <a class="code" href="diccionario_8h.html#abde7585dad6e5e486d904829e2153c2f">fromFile</a>(argv[i]);</div><div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;        std::cout&lt;&lt;std::endl&lt;&lt;i&lt;&lt;<span class="stringliteral">&quot;º diccionario (&quot;</span>&lt;&lt;aux.<a class="code" href="classdiccionario.html#a6a5e2f1a3e47c3075951b1e2f15e3bcd">size</a>()&lt;&lt;<span class="stringliteral">&quot; palabras)\n\n&quot;</span>;</div><div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;        std::cout&lt;&lt;aux&lt;&lt;std::endl;</div><div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;        dic += aux;</div><div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;        std::cout&lt;&lt;<span class="stringliteral">&quot;El diccionario total tiene &quot;</span>&lt;&lt;dic.<a class="code" href="classdiccionario.html#a6a5e2f1a3e47c3075951b1e2f15e3bcd">size</a>()&lt;&lt;<span class="stringliteral">&quot; palabras\n&quot;</span>;</div><div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    }</div><div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    <a class="code" href="classarbol__ia.html">arbol_ia</a> arbol(dic);</div><div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    <span class="keywordflow">return</span> 0;</div><div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;}</div><div class="ttc" id="classdiccionario_html"><div class="ttname"><a href="classdiccionario.html">diccionario</a></div><div class="ttdoc">TDA diccionario. </div><div class="ttdef"><b>Definition:</b> <a href="diccionario_8h_source.html#l00018">diccionario.h:18</a></div></div>
+<div class="ttc" id="diccionario_8h_html_abde7585dad6e5e486d904829e2153c2f"><div class="ttname"><a href="diccionario_8h.html#abde7585dad6e5e486d904829e2153c2f">fromFile</a></div><div class="ttdeci">diccionario fromFile(const char file[])</div><div class="ttdoc">Crea un diccionario a partir de un archivo. </div><div class="ttdef"><b>Definition:</b> <a href="diccionario_8cpp_source.html#l00072">diccionario.cpp:72</a></div></div>
+<div class="ttc" id="classarbol__ia_html"><div class="ttname"><a href="classarbol__ia.html">arbol_ia</a></div><div class="ttdoc">TDA arbol_ia, representa un arbol n-ario donde los nodos son nodo_ia. </div><div class="ttdef"><b>Definition:</b> <a href="ia_8h_source.html#l00102">ia.h:102</a></div></div>
+<div class="ttc" id="ia_8h_html"><div class="ttname"><a href="ia_8h.html">ia.h</a></div><div class="ttdoc">Fichero de cabecera de las clases nodo_ia, arbol_ia y arbol_ia_iterator. </div></div>
+<div class="ttc" id="classdiccionario_html_a6a5e2f1a3e47c3075951b1e2f15e3bcd"><div class="ttname"><a href="classdiccionario.html#a6a5e2f1a3e47c3075951b1e2f15e3bcd">diccionario::size</a></div><div class="ttdeci">size_t size() const</div><div class="ttdoc">Consulta el tamaño del diccionario. </div><div class="ttdef"><b>Definition:</b> <a href="diccionario_8h_source.html#l00030">diccionario.h:30</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Generado por &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.14
+</small></address>
+</body>
+</html>

@@ -1,0 +1,30 @@
+digraph "fromDicFile"
+{
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node10 [label="fromDicFile",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black"];
+  Node10 -> Node11 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node11 [label="fromFile",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$diccionario_8h.html#abde7585dad6e5e486d904829e2153c2f",tooltip="Crea un diccionario a partir de un archivo. "];
+  Node10 -> Node12 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node12 [label="fromDic",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$lista__letras_8cpp.html#a866da14f5228e87f4b4d0e337b0df7ff",tooltip="Crea una lista a partir de un diccionario. "];
+  Node12 -> Node13 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node13 [label="diccionario::cbegin",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classdiccionario.html#ae0fef8f7cb621da3fc1dc73e20fc4749",tooltip="Iterador constante al inicio del diccionario. "];
+  Node12 -> Node14 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node14 [label="diccionario::cend",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classdiccionario.html#ac000fe2dbf66b9f509ab8727d36fc185",tooltip="Iterador constante al final del diccionario. "];
+  Node12 -> Node15 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node15 [label="fromString",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$lista__letras_8cpp.html#a7742cbd8a4d8244f44deb8fb8433ee40",tooltip="Crea una lista a partir de una cadena de caracteres. "];
+  Node15 -> Node16 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node16 [label="letra::setChar",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classletra.html#a21a9ef6f3dff0d3670967e1999c45e21",tooltip="Cambia el caracter de una letra dada. "];
+  Node15 -> Node17 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node17 [label="letra::getChar",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classletra.html#a6e77e64d74807aec19a6383e47b5321c",tooltip="Consulta el caracter de la letra. "];
+  Node15 -> Node18 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node18 [label="lista_letras::insertLetter",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classlista__letras.html#af1c0e532b13839b862078fc2a1e8a941",tooltip="Añade una letra a la lista. "];
+  Node18 -> Node19 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node19 [label="lista_letras::isLetter",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classlista__letras.html#a5d34639ae7839855810f4b0175241efe",tooltip="Comprueba si una letra está en la lista. "];
+  Node19 -> Node20 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node20 [label="lista_letras::begin",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classlista__letras.html#a189e5769bfaf78618ad5d525991de201",tooltip="Devuelve un iterador al comienzo de la lista. "];
+  Node19 -> Node21 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node21 [label="lista_letras::end",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classlista__letras.html#a73f0bf2b7b320b8d2aa503ab7f1e5421",tooltip="Devuelve un iterador al final de la lista. "];
+  Node18 -> Node17 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+}

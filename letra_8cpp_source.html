@@ -1,0 +1,86 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.14"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Practica final ED: Fichero Fuente src/letra.cpp</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Practica final ED
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generado por Doxygen 1.8.14 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Buscar');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Buscar');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">letra.cpp</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="letra_8cpp.html">Ir a la documentación de este archivo.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;</div><div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#include&lt;cctype&gt;</span></div><div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#include&quot;<a class="code" href="letra_8h.html">letra.h</a>&quot;</span></div><div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;</div><div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="keywordtype">void</span> letra::scrabble() {</div><div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;    <span class="keywordflow">if</span> (c==<span class="charliteral">&#39;Z&#39;</span>)</div><div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;        p = 10;</div><div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;    <span class="keywordflow">else</span> <span class="keywordflow">if</span> (c==<span class="charliteral">&#39;K&#39;</span> || c==<span class="charliteral">&#39;Q&#39;</span> || c==<span class="charliteral">&#39;W&#39;</span> || c==<span class="charliteral">&#39;X&#39;</span>)</div><div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;        p = 8;</div><div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;    <span class="keywordflow">else</span> <span class="keywordflow">if</span> (c==<span class="charliteral">&#39;J&#39;</span>)</div><div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;        p = 6;</div><div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    <span class="keywordflow">else</span> <span class="keywordflow">if</span> (c==<span class="charliteral">&#39;F&#39;</span> || c==<span class="charliteral">&#39;H&#39;</span> || c==<span class="charliteral">&#39;V&#39;</span> || c==<span class="charliteral">&#39;Y&#39;</span>)</div><div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;        p = 4;</div><div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    <span class="keywordflow">else</span> <span class="keywordflow">if</span> (c==<span class="charliteral">&#39;M&#39;</span> || c==<span class="charliteral">&#39;B&#39;</span> || c==<span class="charliteral">&#39;P&#39;</span>)</div><div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;        p = 3;</div><div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    <span class="keywordflow">else</span> <span class="keywordflow">if</span> (c==<span class="charliteral">&#39;C&#39;</span> || c==<span class="charliteral">&#39;D&#39;</span> || c==<span class="charliteral">&#39;G&#39;</span>)</div><div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;        p = 2;</div><div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    <span class="keywordflow">else</span></div><div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;        p = 1;</div><div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;}</div><div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;</div><div class="line"><a name="l00028"></a><span class="lineno"><a class="line" href="classletra.html#ab5d062324d6960e12f2adb680681524e">   28</a></span>&#160;<a class="code" href="classletra.html#ab5d062324d6960e12f2adb680681524e">letra::letra</a>() {</div><div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    c = <span class="charliteral">&#39;A&#39;</span>;</div><div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    p = 0;</div><div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;}</div><div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;</div><div class="line"><a name="l00033"></a><span class="lineno"><a class="line" href="classletra.html#a18bda124a1002a363a28907bb6e23d7a">   33</a></span>&#160;<a class="code" href="classletra.html#ab5d062324d6960e12f2adb680681524e">letra::letra</a>(<span class="keyword">const</span> <a class="code" href="classletra.html">letra</a> &amp;orig) {</div><div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    c = toupper(orig.c);</div><div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    p = orig.p;</div><div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;}</div><div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;</div><div class="line"><a name="l00038"></a><span class="lineno"><a class="line" href="classletra.html#aa380222a2fbcfd3449d71faa5b99a596">   38</a></span>&#160;<a class="code" href="classletra.html#ab5d062324d6960e12f2adb680681524e">letra::letra</a>(<span class="keyword">const</span> <span class="keywordtype">char</span> &amp;_c,<span class="keyword">const</span> <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> &amp;_p) {</div><div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    c = toupper(_c);</div><div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    p = _p;</div><div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;}</div><div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;</div><div class="line"><a name="l00043"></a><span class="lineno"><a class="line" href="classletra.html#ae4da1d22f5ca6dd63e0a6a4258c6b27e">   43</a></span>&#160;<a class="code" href="classletra.html#ab5d062324d6960e12f2adb680681524e">letra::letra</a>(<span class="keyword">const</span> <span class="keywordtype">char</span> &amp;_c) {</div><div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    c = toupper(_c);</div><div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    scrabble();</div><div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;}</div><div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;</div><div class="line"><a name="l00048"></a><span class="lineno"><a class="line" href="classletra.html#a21a9ef6f3dff0d3670967e1999c45e21">   48</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="classletra.html#a21a9ef6f3dff0d3670967e1999c45e21">letra::setChar</a>(<span class="keyword">const</span> <span class="keywordtype">char</span> &amp;_c) {</div><div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    c = toupper(_c);</div><div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    scrabble();</div><div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;}</div><div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;</div><div class="line"><a name="l00053"></a><span class="lineno"><a class="line" href="classletra.html#a484a2603d205539a01cc0f0c81e4f3bf">   53</a></span>&#160;<a class="code" href="classletra.html">letra</a>&amp; <a class="code" href="classletra.html#a484a2603d205539a01cc0f0c81e4f3bf">letra::operator=</a>(<span class="keyword">const</span> <a class="code" href="classletra.html">letra</a> &amp;l) {</div><div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    c = toupper(l.c);</div><div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    p = l.p;</div><div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    <span class="keywordflow">return</span> *<span class="keyword">this</span>;</div><div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;}</div><div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;</div><div class="line"><a name="l00059"></a><span class="lineno"><a class="line" href="classletra.html#a94502ea9c4cac09729965d49f636d3f1">   59</a></span>&#160;<span class="keywordtype">bool</span> <a class="code" href="classletra.html#a94502ea9c4cac09729965d49f636d3f1">letra::operator==</a>(<span class="keyword">const</span> <a class="code" href="classletra.html">letra</a> &amp;l)<span class="keyword"> const </span>{</div><div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    <span class="keywordflow">if</span> (c==l.c &amp;&amp; p==l.p)</div><div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">true</span>;</div><div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    <span class="keywordflow">else</span></div><div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">false</span>;</div><div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;}</div><div class="ttc" id="classletra_html_ab5d062324d6960e12f2adb680681524e"><div class="ttname"><a href="classletra.html#ab5d062324d6960e12f2adb680681524e">letra::letra</a></div><div class="ttdeci">letra()</div><div class="ttdoc">Constructor por defecto. </div><div class="ttdef"><b>Definition:</b> <a href="letra_8cpp_source.html#l00028">letra.cpp:28</a></div></div>
+<div class="ttc" id="letra_8h_html"><div class="ttname"><a href="letra_8h.html">letra.h</a></div></div>
+<div class="ttc" id="classletra_html_a94502ea9c4cac09729965d49f636d3f1"><div class="ttname"><a href="classletra.html#a94502ea9c4cac09729965d49f636d3f1">letra::operator==</a></div><div class="ttdeci">bool operator==(const letra &amp;l) const</div><div class="ttdoc">Determina si dos letras son iguales. </div><div class="ttdef"><b>Definition:</b> <a href="letra_8cpp_source.html#l00059">letra.cpp:59</a></div></div>
+<div class="ttc" id="classletra_html"><div class="ttname"><a href="classletra.html">letra</a></div><div class="ttdoc">TDA letra. Representa a una letra con su puntuación asociada. </div><div class="ttdef"><b>Definition:</b> <a href="letra_8h_source.html#l00014">letra.h:14</a></div></div>
+<div class="ttc" id="classletra_html_a21a9ef6f3dff0d3670967e1999c45e21"><div class="ttname"><a href="classletra.html#a21a9ef6f3dff0d3670967e1999c45e21">letra::setChar</a></div><div class="ttdeci">void setChar(const char &amp;_c)</div><div class="ttdoc">Cambia el caracter de una letra dada. </div><div class="ttdef"><b>Definition:</b> <a href="letra_8cpp_source.html#l00048">letra.cpp:48</a></div></div>
+<div class="ttc" id="classletra_html_a484a2603d205539a01cc0f0c81e4f3bf"><div class="ttname"><a href="classletra.html#a484a2603d205539a01cc0f0c81e4f3bf">letra::operator=</a></div><div class="ttdeci">letra &amp; operator=(const letra &amp;l)</div><div class="ttdoc">Sobrecarga del operador de asignación. </div><div class="ttdef"><b>Definition:</b> <a href="letra_8cpp_source.html#l00053">letra.cpp:53</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Generado por &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.14
+</small></address>
+</body>
+</html>

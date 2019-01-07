@@ -1,0 +1,89 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.14"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Practica final ED: Fichero Fuente include/bolsa_letras.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Practica final ED
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generado por Doxygen 1.8.14 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Buscar');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Buscar');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">bolsa_letras.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="bolsa__letras_8h.html">Ir a la documentación de este archivo.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;</div><div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#include&lt;set&gt;</span></div><div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#include&lt;vector&gt;</span></div><div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#include&quot;<a class="code" href="letra_8h.html">letra.h</a>&quot;</span></div><div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#include&quot;<a class="code" href="lista__letras_8h.html">lista_letras.h</a>&quot;</span></div><div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;</div><div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#ifndef _BOLSA_LETRAS_H</span></div><div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="preprocessor">#define _BOLSA_LETRAS_H</span></div><div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;</div><div class="line"><a name="l00019"></a><span class="lineno"><a class="line" href="structclasscomp__letra.html">   19</a></span>&#160;<span class="keyword">struct </span><a class="code" href="structclasscomp__letra.html">classcomp_letra</a> {</div><div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    <span class="keywordtype">bool</span> operator()(<span class="keyword">const</span> <a class="code" href="classletra.html">letra</a> &amp;lhs,<span class="keyword">const</span> <a class="code" href="classletra.html">letra</a> &amp;rhs)<span class="keyword"> const </span>{</div><div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;        <span class="keywordflow">return</span> lhs.<a class="code" href="classletra.html#a6e77e64d74807aec19a6383e47b5321c">getChar</a>()&lt;rhs.<a class="code" href="classletra.html#a6e77e64d74807aec19a6383e47b5321c">getChar</a>();</div><div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    }</div><div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;};</div><div class="line"><a name="l00027"></a><span class="lineno"><a class="line" href="classbolsa__letras.html">   27</a></span>&#160;<span class="keyword">class </span><a class="code" href="classbolsa__letras.html">bolsa_letras</a> {</div><div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="keyword">private</span>:</div><div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    std::vector&lt;letra&gt; bolsa; </div><div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    <span class="keywordtype">void</span> shuffle(); </div><div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="keyword">public</span>:</div><div class="line"><a name="l00035"></a><span class="lineno"><a class="line" href="classbolsa__letras.html#a2e3543129b69e255741099fb137cceae">   35</a></span>&#160;    <a class="code" href="classbolsa__letras.html#a2e3543129b69e255741099fb137cceae">bolsa_letras</a>() {};</div><div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    <a class="code" href="classbolsa__letras.html#a2e3543129b69e255741099fb137cceae">bolsa_letras</a>(<span class="keyword">const</span> <a class="code" href="classbolsa__letras.html">bolsa_letras</a> &amp;orig);</div><div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    <a class="code" href="classbolsa__letras.html#a2e3543129b69e255741099fb137cceae">bolsa_letras</a>(<span class="keyword">const</span> <a class="code" href="classlista__letras.html">lista_letras</a> &amp;ll);</div><div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    std::multiset&lt;letra,classcomp_letra&gt; <a class="code" href="classbolsa__letras.html#a2c42a1f66dd486f867a29a12dddc1a64">sample</a>(<span class="keyword">const</span> <span class="keywordtype">size_t</span> &amp;n) <span class="keyword">const</span>;</div><div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;};</div><div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;</div><div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;<span class="preprocessor">#endif</span></div><div class="ttc" id="classbolsa__letras_html_a2c42a1f66dd486f867a29a12dddc1a64"><div class="ttname"><a href="classbolsa__letras.html#a2c42a1f66dd486f867a29a12dddc1a64">bolsa_letras::sample</a></div><div class="ttdeci">std::multiset&lt; letra, classcomp_letra &gt; sample(const size_t &amp;n) const</div><div class="ttdoc">Saca un número de letras de la bolsa con reemplazamiento. </div><div class="ttdef"><b>Definition:</b> <a href="bolsa__letras_8cpp_source.html#l00030">bolsa_letras.cpp:30</a></div></div>
+<div class="ttc" id="letra_8h_html"><div class="ttname"><a href="letra_8h.html">letra.h</a></div></div>
+<div class="ttc" id="classletra_html_a6e77e64d74807aec19a6383e47b5321c"><div class="ttname"><a href="classletra.html#a6e77e64d74807aec19a6383e47b5321c">letra::getChar</a></div><div class="ttdeci">char &amp; getChar()</div><div class="ttdoc">Consulta el caracter de la letra. </div><div class="ttdef"><b>Definition:</b> <a href="letra_8h_source.html#l00050">letra.h:50</a></div></div>
+<div class="ttc" id="lista__letras_8h_html"><div class="ttname"><a href="lista__letras_8h.html">lista_letras.h</a></div></div>
+<div class="ttc" id="classletra_html"><div class="ttname"><a href="classletra.html">letra</a></div><div class="ttdoc">TDA letra. Representa a una letra con su puntuación asociada. </div><div class="ttdef"><b>Definition:</b> <a href="letra_8h_source.html#l00014">letra.h:14</a></div></div>
+<div class="ttc" id="classbolsa__letras_html"><div class="ttname"><a href="classbolsa__letras.html">bolsa_letras</a></div><div class="ttdoc">TDA bolsa_letras. </div><div class="ttdef"><b>Definition:</b> <a href="bolsa__letras_8h_source.html#l00027">bolsa_letras.h:27</a></div></div>
+<div class="ttc" id="structclasscomp__letra_html"><div class="ttname"><a href="structclasscomp__letra.html">classcomp_letra</a></div><div class="ttdoc">Función para personalizar el orden de los multiset de letras. </div><div class="ttdef"><b>Definition:</b> <a href="bolsa__letras_8h_source.html#l00019">bolsa_letras.h:19</a></div></div>
+<div class="ttc" id="classlista__letras_html"><div class="ttname"><a href="classlista__letras.html">lista_letras</a></div><div class="ttdoc">TDA lista_letras. Representa un conjunto de datos_letra. </div><div class="ttdef"><b>Definition:</b> <a href="lista__letras_8h_source.html#l00048">lista_letras.h:48</a></div></div>
+<div class="ttc" id="classbolsa__letras_html_a2e3543129b69e255741099fb137cceae"><div class="ttname"><a href="classbolsa__letras.html#a2e3543129b69e255741099fb137cceae">bolsa_letras::bolsa_letras</a></div><div class="ttdeci">bolsa_letras()</div><div class="ttdoc">Constructor por defecto. </div><div class="ttdef"><b>Definition:</b> <a href="bolsa__letras_8h_source.html#l00035">bolsa_letras.h:35</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Generado por &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.14
+</small></address>
+</body>
+</html>
